@@ -23,7 +23,8 @@ export class RestaurantInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.addRestaurant(this.state)
+    // add missing code
+    this.props.addRestaurant()
   }
 
   render() {
@@ -33,7 +34,6 @@ export class RestaurantInput extends Component {
           <input
             type="text"
             onChange={(event) => this.handleOnNameChange(event)}
-            value={this.state.name}
             id="name"
             placeholder="restaurant name" />
         </p>

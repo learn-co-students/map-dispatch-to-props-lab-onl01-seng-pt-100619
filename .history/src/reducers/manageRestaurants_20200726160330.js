@@ -15,3 +15,11 @@ export default function manageRestaurants(state = {
   }
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    addRestaurant: () => {
+      dispatch(addRestaurant())
+    }
+  };
+};
+

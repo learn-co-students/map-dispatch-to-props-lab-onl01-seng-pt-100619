@@ -15,3 +15,12 @@ export default function manageRestaurants(state = {
   }
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    addItem: () => {
+      dispatch(addRestaurant())
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
