@@ -8,6 +8,7 @@ import manageRestaurants from './reducers/manageRestaurants';
 const store = createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
+ { debugger}
   <Provider store={store}>
     <App store={store}/>
   </Provider>,
